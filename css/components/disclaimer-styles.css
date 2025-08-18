@@ -1,0 +1,30 @@
+.disclaimer-block,
+.cookie-policy-block,
+.privacy-policy-block {
+  margin-bottom: 35px; /* Adjusted margin-bottom */
+  padding: 25px; /* Added padding */
+  background-color: var(--card-background-color); /* New background color */
+  border-radius: 10px; /* Added border-radius */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Added subtle shadow */
+}
+
+.disclaimer-block h3,
+.cookie-policy-block h3,
+.privacy-policy-block h3 {
+  margin-bottom: 12px; /* Adjusted margin-bottom */
+
+  font-weight: 700; /* Adjusted font weight */
+  font-size: clamp(1.2rem, 0.8vw + 1rem, 1.6rem); /* Adjusted font size */
+  line-height: 1.4; /* Adjusted line height */
+  text-transform: uppercase;
+  color: var(--primary-color); /* New color variable */
+}
+
+.disclaimer-block p,
+.cookie-policy-block p,
+.privacy-policy-block p {
+  font-size: clamp(0.95rem, 0.15vw + 0.9rem, 1.05rem); /* Adjusted font size */
+  line-height: 1.7; /* Adjusted line height */
+  text-align: left; /* Changed to left align */
+  color: var(--dark-text-color); /* New color variable */
+}

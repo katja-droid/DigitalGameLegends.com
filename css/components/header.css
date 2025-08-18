@@ -1,0 +1,102 @@
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+
+  width: 100%;
+
+  background-color: var(--header-background-color);
+  background-image: var(--gradient-primary);
+}
+.headerContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  color: var(--light-text-color);
+}
+.logo {
+  font-weight: bold;
+  font-size: clamp(1.2rem, 1.5vw + 0.8rem, 2rem); /* Adjusted font size */
+  letter-spacing: 1px; /* Added letter-spacing */
+  text-transform: uppercase;
+  color: transparent; /* Applied new text color */
+  background-image: var(--gradient-secondary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Added text shadow */
+}
+.menuToggle {
+  border: none;
+  cursor: pointer;
+  display: block;
+  
+  background-color: transparent;
+  color: var(--accent-color); /* Applied new text color */
+  font-size: 2.2rem; /* Adjusted font size */
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mobileMenu {
+  display: none;
+  width: 100%;
+
+  &.open {
+    position: absolute;
+    right: 0;
+    top: 99px;
+    z-index: 12;
+
+    width: 100%;
+    padding: 15px;
+
+    display: flex;
+    justify-content: center;
+    
+    background-color: rgba(26, 43, 60, 0.8); /* Changed to primary-color with transparency */
+    backdrop-filter: blur(15px); /* Adjusted blur */
+    -webkit-backdrop-filter: blur(15px);
+  }
+
+  @media (min-width: 768px) {
+    display: block;
+    width: auto;
+  }
+}
+
+.mobileMenuList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adjusted gap */
+  align-items: center;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 25px;
+  }
+}
+
+.mobileMenuLink {
+  font-weight: 600;
+  font-size: clamp(1rem, 0.451vw + 0.889rem, 1.25rem);
+  color: var(--light-text-color); /* Applied new text color */
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color); /* Changed to accent-color */
+  }
+}
+
+.mobileMenuLink.active {
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--accent-color); /* Changed to accent-color */
+}

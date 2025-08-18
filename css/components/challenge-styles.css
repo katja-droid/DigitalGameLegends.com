@@ -1,0 +1,31 @@
+.challenge__stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Adjusted grid for stats */
+  justify-content: center;
+  gap: 2.5rem; /* Adjusted gap */
+  flex-wrap: wrap;
+  background-color: var(--secondary-background-color); /* New background color */
+  border-radius: 15px; /* Adjusted border-radius */
+  padding: clamp(3rem, 4vw, 5rem); /* Increased padding with clamp */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Added subtle shadow */
+  background-image: var(--gradient-primary);
+}
+
+.challenge__stat {
+  min-width: 120px; /* Adjusted min-width */
+  text-align: center;
+}
+
+.challenge__value {
+  font-size: 2.8rem; /* Increased font size */
+  font-weight: 800; /* Increased font weight */
+  color: var(--accent-color); /* Changed color variable */
+  margin-bottom: 8px; /* Adjusted margin */
+}
+
+.challenge__label {
+  color: var(--accent-color); /* Changed color variable */
+  margin-top: 0.5rem;
+  font-size: 1rem; /* Adjusted font size */
+  line-height: 1.4;
+}

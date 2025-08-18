@@ -1,0 +1,9 @@
+@import url("./components/roots.css");
+@import url("./components/reset-styles.css");
+@import url("./components/common-styles.css");
+
+@import url("./components/header.css");
+@import url("./components/hero.css");
+@import url("./components/disclaimer-styles.css");
+@import url("./components/footer.css");
+@import url("./components/cookie-banner.css");

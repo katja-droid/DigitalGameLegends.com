@@ -1,0 +1,48 @@
+.cookie-modal {
+  position: fixed;
+  bottom: 0;
+  z-index: 9;
+
+  display: none;
+  max-width: 750px;
+  padding: 15px;
+  border-radius: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(26, 43, 60, 0.95); /* Changed to primary-color with transparency */
+  color: var(--main-background-color); /* Adjusted to main background color for lighter text */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Adjusted shadow */
+}
+.cookie-modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 30px;
+  @media (min-width: 500px) {
+    flex-direction: row;
+  }
+}
+.cookie-modal a {
+  color: var(--link-color); /* Adjusted to link color */
+
+  text-decoration: underline;
+}
+
+.cookie-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  
+  background-color: var(--accent-color);
+  color: var(--dark-text-color); /* Adjusted to dark text color for contrast */
+  font-weight: bold;
+  font-size: clamp(1rem, 0.225vw + 0.945rem, 1.125rem);
+  line-height: clamp(1.2rem, 0.474vw + 1.084rem, 1.463rem);
+  transition: background 0.3s ease;
+}
+
+.cookie-btn:hover {
+  background-color: var(--hover-color);
+}

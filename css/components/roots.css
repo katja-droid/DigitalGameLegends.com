@@ -1,0 +1,27 @@
+:root {
+  --font-family: "Roboto", sans-serif;
+
+  --primary-color: #004D40; /* Darker Teal Green */
+  --secondary-color: #56a8a1; /* Lighter Teal Green */
+  --accent-color: #b1e791; /* Vibrant Violet */
+
+  --primary-text-color: #353d46; /* Darker Blue, for main titles */
+  --secondary-text-color: #233e34; /* Dark Brown, for subtitles/important text */
+  --light-text-color: #E0E0E0; /* Light Gray, for general text on dark BG */
+  --dark-text-color: #132c18; /* Very Dark Gray, for text on light BG */
+
+  --link-color: #46bb98; /* Light Blue (kept for good contrast) */
+  --hover-color: #1fa297; /* Darker Violet for hover */
+
+  --main-background-color: #F8F8F8; /* Slightly lighter gray for base */
+  --header-background-color: #004D40; /* Same as primary color */
+  --border-color: #1b619a; /* Same as accent color for borders */
+  --card-background-color: #FFFFFF; /* White for cards on light BG */
+  --secondary-background-color: #E0F2F7; /* Light Blue-Green for sections */
+  --dark-background-color: #56a8a1; /* Very Dark Gray for sections */
+
+  --gradient-primary: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  --gradient-secondary: linear-gradient(to right, var(--accent-color), var(--accent-color));
+
+  --time-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

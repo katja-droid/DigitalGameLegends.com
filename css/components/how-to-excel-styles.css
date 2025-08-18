@@ -1,0 +1,41 @@
+.how-to-play__grid {
+  display: grid;
+  gap: 30px; /* Increased gap for better spacing */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* More flexible grid */
+  padding: clamp(20px, 3vw, 40px); /* Adjusted padding to be consistent */
+  background-color: var(--light-background-color); /* New background color */
+  border-radius: 10px; /* Added border-radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+  background-image: var(--gradient-secondary);
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on larger screens */
+  }
+
+  .how-step {
+    padding: 15px; /* Adjusted padding */
+    border: none; /* Removed border */
+    border-radius: 8px; /* Adjusted border-radius */
+    background-color: var(--card-background-color); /* New background color for steps */
+    text-align: center; /* Center align text */
+    transition: transform 0.3s ease; /* Add hover effect */
+
+    &:hover {
+      transform: translateY(-5px); /* Lift card on hover */
+    }
+  }
+}
+
+.how-step__circle {
+  width: 55px; /* Increased size */
+  height: 55px; /* Increased size */
+  background-color: var(--accent-color); /* Changed color variable */
+  color: var(--primary-text-color); /* Changed color variable */
+  font-weight: 700; /* Adjusted font weight */
+  font-size: 1.5rem; /* Adjusted font size */
+  border-radius: 50%;
+  margin: 0 auto 15px; /* Adjusted margin */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

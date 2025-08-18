@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>News & Updates | Domain.com</title>
+
+    <meta
+      name="description"
+      content="Stay informed with the latest news and updates from Domain.com, your source for strategic challenges and skill development. Discover new features, events, and community highlights."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="./img/banner.jpg"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="./css/news-page-styles.css" />
+  </head>
+  <body>
+    <header class="header"></header>
+    <main>
+      <section class="hero" id="hero-section">
+        <div class="hero__content hero__content--warfare">
+          <div class="hero__image">
+            <img src="./img/banner.jpg" alt="Game Preview Image" />
+          </div>
+          <div class="hero__text">
+            <p class="hero__badge" id="hero-badge"></p>
+            <h1 class="hero__title" id="hero-title"></h1>
+            <h2 class="hero__subtitle" id="hero-subtitle"></h2>
+            <p class="hero__desc" id="hero-desc"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="title">Recent Announcements</h2>
+          <ul class="cards-grid" id="news-list"></ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"></footer>
+    <div id="cookie-modal" class="cookie-modal">
+      <div class="cookie-modal-content">
+        <p class="text" style="margin-bottom: 0">
+          We use cookies to enhance your experience on our website. By continuing,
+          you acknowledge our
+          <a href="./cookie-policy.html">Cookie Policy</a>.
+        </p>
+        <button id="accept-cookies" class="cookie-btn">Accept</button>
+      </div>
+    </div>
+
+    <script src="./js/page-builder.js"></script>
+    <script src="./js/content/main-hero-content.js"></script>
+    <script src="./js/content/news-updates-content.js"></script>
+    <script src="./js/cookie-consent.js"></script>
+  </body>
+</html>

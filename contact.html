@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contact Domain.com</title>
+
+    <meta
+      name="description"
+      content="Connect with Domain.com – your premier resource for strategic challenges and skill enhancement. Reach out for support, inquiries, or collaboration opportunities. Located in Australia."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" href="./img/banner.jpg" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./css/contact-page.css" />
+  </head>
+  <body>
+    <header class="header"></header>
+
+    <main>
+      <section class="hero" id="hero-section">
+        <div class="hero__content hero__content--warfare">
+          <div class="hero__image">
+            <img src="./img/banner.jpg" alt="Game Preview Image" />
+          </div>
+          <div class="hero__text">
+            <p class="hero__badge" id="hero-badge"></p>
+            <h1 class="hero__title" id="hero-title"></h1>
+            <h2 class="hero__subtitle" id="hero-subtitle"></h2>
+            <p class="hero__desc" id="hero-desc"></p>
+          </div>
+        </div>
+        <section class="section">
+        <div class="container">
+          <div class="contacts-wrapper">
+            <div class="contact-info">
+              <h3 class="contact-title">Reach Out to Us</h3>
+              <ul>
+                <li>📍 Level 4, 12 Skill Street, Sydney NSW 2000, Australia</li>
+                <li><a href="tel:+61 2 1004 5608">☎️ +61 2 1004 5608</a></li>
+                <li>
+                  <a href="mailto:support@domain.com"
+                    >✉️ support@domain.com</a
+                  >
+                </li>
+              </ul>
+              <iframe
+                src="https://www.google.com/maps?q=Level+4,+12+Skill+Street,+Sydney+NSW+2000,+Australia&output=embed"
+                width="100%"
+                height="300"
+                style="border: 0"
+                allowfullscreen
+              ></iframe>
+            </div>
+            
+
+            <div class="contact-form-wrapper">
+              <h3
+                class="subtitle"
+                style="margin-bottom: 15px; text-align: center"
+              >
+                Send Us a Message
+              </h3>
+              <form id="contact-form">
+                <label
+                  >Your Name* <input type="text" name="firstName" required
+                /></label>
+                <label
+                  >Your Email* <input type="email" name="email" required
+                /></label>
+                <label
+                  >Your Phone* <input type="tel" name="phone" required
+                /></label>
+                <label
+                  >Your Message*
+                  <textarea name="message" rows="5" required></textarea>
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" name="agree" required />
+                  I have read and agree to the privacy policy
+                </label>
+                <button type="submit" class="button2">Submit Inquiry</button>
+                <p id="form-success" class="form-success" style="display: none">
+                  Message sent successfully ✅
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      </section>
+      
+    </main>
+
+    <footer class="footer"></footer>
+
+    <div id="cookie-modal" class="cookie-modal">
+      <div class="cookie-modal-content">
+        <p class="text" style="margin-bottom: 0">
+          We use cookies to enhance your experience on our website. By continuing,
+          you acknowledge our
+          <a href="./cookie-policy.html">Cookie Policy</a>.
+        </p>
+        <button id="accept-cookies" class="cookie-btn">Accept</button>
+      </div>
+    </div>
+
+    <script src="./js/page-builder.js"></script>
+    <script src="./js/content/main-hero-content.js"></script>
+    <script src="./js/form-handler.js"></script>
+    <script src="./js/cookie-consent.js"></script>
+  </body>
+</html>

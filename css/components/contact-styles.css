@@ -1,0 +1,117 @@
+.contacts-wrapper {
+  display: grid;
+  gap: 30px; /* Adjusted gap */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjusted minmax for better responsiveness */
+  padding: 30px; /* Added padding to the wrapper */
+  background-color: var(--secondary-background-color); /* New background color */
+  border-radius: 10px; /* Added border-radius */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.contact-form-wrapper,
+.contact-info {
+  padding: 30px; /* Adjusted padding */
+  color: var(--dark-text-color); /* Adjusted text color */
+  height: 100%;
+  border: 1px solid var(--border-color); /* Used new border color variable */
+  border-radius: 15px; /* Adjusted border-radius */
+  background-color: var(--card-background-color); /* New background color for cards */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Added subtle shadow */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-title {
+  color: var(--primary-color); /* Adjusted to primary color */
+  padding: 15px 20px; /* Adjusted padding */
+  margin: -30px -30px 25px; /* Adjusted margin */
+  font-weight: 700; /* Adjusted font weight */
+  text-align: center; /* Centered title */
+  font-size: 1.6rem; /* Adjusted font size */
+
+  border-radius: 12px 12px 0 0; /* Rounded top corners */
+}
+
+form label {
+  display: block;
+  margin-bottom: 18px; /* Adjusted margin */
+  font-weight: 500;
+  font-size: 1rem; /* Adjusted font size */
+  color: var(--dark-text-color); /* Adjusted text color */
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px 15px; /* Adjusted padding */
+  border: 1px solid var(--border-color); /* Solid border with new color */
+  border-radius: 8px; /* Added border-radius */
+  margin-top: 8px; /* Adjusted margin */
+
+  resize: vertical; /* Allow vertical resize for textarea */
+  outline: none;
+  background-color: var(--main-background-color); /* New background color */
+  font-size: 1rem; /* Adjusted font size */
+  color: var(--dark-text-color); /* Adjusted text color */
+  transition: border-color 0.3s ease; /* Add transition for focus */
+
+  &:focus {
+    border-color: var(--accent-color); /* Highlight border on focus */
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contacts-wrapper {
+    padding: 2px !important;
+  }
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0; /* Adjusted margin */
+  font-size: 0.95rem; /* Adjusted font size */
+  color: var(--dark-text-color); /* Adjusted text color */
+}
+.checkbox input {
+  width: 20px; /* Adjusted size for checkbox */
+  height: 20px; /* Adjusted size for checkbox */
+  accent-color: var(--accent-color); /* Styled checkbox color */
+  margin-top: 0; /* Remove top margin */
+}
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 15px; /* Adjusted margin */
+  font-size: 1rem; /* Adjusted font size */
+  color: var(--dark-text-color); /* Adjusted text color */
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Added gap for icons */
+}
+
+.contact-info li a {
+  color: var(--text-color); /* Adjusted link color */
+  text-decoration: underline;
+  &:hover {
+      font-weight: 700;
+  }
+}
+
+.form-success {
+  margin-top: 20px; /* Adjusted margin */
+  color: var(--text-color);
+  font-weight: 600; /* Adjusted font weight */
+  text-align: left; /* Centered success message */
+
+}
+

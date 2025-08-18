@@ -1,0 +1,122 @@
+.container {
+  width: 100%;
+  max-width: 1200px; /* Adjusted max-width for container */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(15px, calc(5px + 2vw), 40px); /* Adjusted padding */
+  padding-right: clamp(15px, calc(5px + 2vw), 40px); /* Adjusted padding */
+}
+.section {
+  padding-top: clamp(30px, calc(30px + 8vw), 30px); /* Increased padding */
+  padding-bottom: clamp(30px, calc(30px + 8vw), 50px); /* Increased padding */
+}
+.main-title {
+  font-weight: 900;
+  font-size: clamp(2rem, 2.5vw + 1.5rem, 3.5rem); /* Adjusted font size */
+  line-height: 1.2; /* Adjusted line height */
+  text-transform: uppercase;
+  color: var(--primary-text-color); /* New color variable */
+  text-align: center; /* Center align main title */
+  margin-bottom: 40px; /* Added margin-bottom */
+}
+.title {
+  width: 100%;
+  margin-bottom: 30px; /* Adjusted margin */
+  color: var(--secondary-text-color); /* New color variable */
+  font-weight: 700;
+  font-size: clamp(1.8rem, 1.5vw + 1.2rem, 2.8rem); /* Adjusted font size */
+  line-height: 1.3; /* Adjusted line height */
+  text-align: center;
+  text-transform: uppercase;
+}
+.subtitle {
+  font-weight: 700;
+  text-align: center; /* Centered subtitle */
+  font-size: clamp(1.2rem, 0.7vw + 0.9rem, 1.8rem); /* Adjusted font size */
+  line-height: 1.5; /* Adjusted line height */
+  color: var(--dark-text-color); /* New color variable */
+}
+.text {
+  font-size: clamp(0.95rem, 0.2vw + 0.8rem, 1.1rem); /* Adjusted font size */
+  line-height: 1.8; /* Adjusted line height */
+  text-align: left; /* Changed to left align */
+  color: var(--light-text-color); /* New color variable */
+}
+.desc {
+  text-align: center; /* Centered description */
+  font-size: clamp(0.9rem, 0.15vw + 0.8rem, 1.05rem); /* Adjusted font size */
+  line-height: 1.7; /* Adjusted line height */
+  color: var(--dark-text-color); /* New color variable */
+}
+/* Button styling */ 
+.button2 {
+  display: inline-block;
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: var(--dark-text-color); /* Button text color */
+  padding: 0.8em 2em; /* Adjusted padding */
+  cursor: pointer;
+  font-size: 1.1rem; /* Adjusted font size */
+  border-radius: 0.7em; /* Adjusted border-radius */
+  background: var(--secondary-color); /* Button background */
+  border: 1px solid var(--border-color); /* Button border */
+  font-weight: 600; /* Added font-weight */
+}
+
+.button2:active {
+  color: var(--primary-color); /* Active state text color */
+  box-shadow: inset 4px 4px 12px rgba(0, 0, 0, 0.2), inset -4px -4px 12px rgba(255, 255, 255, 0.8); /* Adjusted shadow */
+}
+
+.button2:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.1); /* Adjusted transparency */
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button2:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: var(--accent-color); /* New background color */
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button2:hover {
+  color: var(--primary-text-color); /* Hover text color */
+  border: 1px solid var(--accent-color); /* Hover border color */
+}
+
+.button2:hover:before {
+  top: -35%;
+  background-color: var(--accent-color); /* Hover background color */
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button2:hover:after {
+  top: -45%;
+  background-color: var(--accent-color); /* Hover background color */
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.no-scroll {
+  overflow: hidden;
+}

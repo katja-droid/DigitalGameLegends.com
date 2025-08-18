@@ -1,0 +1,42 @@
+.features__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjusted minmax for cards */
+  gap: 2rem; /* Increased gap */
+  padding: clamp(30px, 4vw, 50px); /* Added padding */
+  background-color: var(--light-background-color); /* New background color */
+  border-radius: 10px; /* Added border-radius */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+}
+
+.feature-card {
+  background-color: var(--card-background-color); /* New background color */
+  padding: 2rem; /* Increased padding */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Adjusted shadow */
+  text-align: center; /* Centered text */
+  transition: transform 0.3s ease; /* Add hover effect */
+
+  &:hover {
+    transform: translateY(-8px); /* Lift card on hover */
+  }
+}
+
+.feature-card__icon {
+  width: 70px; /* Adjusted icon size */
+  height: 70px; /* Adjusted icon size */
+  margin-bottom: 1.2rem; /* Adjusted margin */
+  fill: var(--accent-color); /* Changed icon color */
+}
+
+.feature-card .subtitle {
+  font-size: 1.3rem; /* Adjusted font size */
+  font-weight: 600; /* Adjusted font weight */
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.feature-card__text {
+  font-size: 0.95rem; /* Adjusted font size */
+  line-height: 1.6;
+  color: var(--text-color);
+}

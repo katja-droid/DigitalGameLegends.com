@@ -63,3 +63,5 @@ function renderHowToPlay(steps) {
 document.addEventListener("DOMContentLoaded", () => {
   renderHowToPlay(howToPlaySteps);
 });
+
+

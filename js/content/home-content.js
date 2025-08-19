@@ -1,88 +1,88 @@
 const featuredGameContent = {
-  title: "Explore the Summit of Skill: Domain.com",
+  title: "Play Monster Heroes Of Myths Now",
   description:
-    "Step into the arena of champions at Domain.com – your ultimate destination for mastering strategic challenges. No downloads needed, just pure skill and thrilling competition.",
+    "Enter the realm of ancient power in Monster Heroes Of Myths — a mythic battle arena where gods clash with monsters in legendary combat. No downloads, just raw might and strategy.",
   features: [
-    "Engage in rapid-fire tactical gameplay",
-    "Discover unique strategies and unlock new abilities",
-    "Seamlessly optimized for all devices, from mobile to desktop",
+    "Fast-paced mythological combat gameplay",
+    "Unlock divine powers, ancient beasts, and legendary warriors",
+    "Optimized for smooth play on mobile & desktop",
   ],
 };
 
 const gameFeatures = [
   {
-    title: "Strategic Showdowns",
-    text: "Confront a variety of formidable opponents and develop winning tactics.",
+    title: "Mythic Battles",
+    text: "Face waves of monstrous foes and rival heroes drawn from ancient legends and dark realms.",
   },
   {
-    title: "Elite Skill Development",
-    text: "Enhance your abilities and refine your approach with every challenge.",
+    title: "Legendary Heroes & Beasts",
+    text: "Unlock and upgrade gods, titans, mythical creatures, and cursed champions.",
   },
   {
-    title: "Adaptable Playstyles",
-    text: "Choose from diverse approaches and customize your experience – every session is unique.",
+    title: "Divine Abilities",
+    text: "Choose between lightning strikes, healing blessings, infernal roars, and more — each run is unique.",
   },
   {
-    title: "Daily Tactical Trials",
-    text: "Participate in daily challenges, compete on global leaderboards, and earn exclusive rewards.",
+    title: "Daily Mythic Trials",
+    text: "Challenge yourself in rotating myth-based scenarios with global scoreboards and epic loot.",
   },
   {
-    title: "Instant Access",
-    text: "Jump directly into the action – no installation required.",
+    title: "Instant Play",
+    text: "Summon your hero and dive into battle instantly — no install required.",
   },
 ];
 
 const howToPlaySteps = [
   {
     step: "1",
-    title: "Select Your Strategy",
-    text: "Choose your approach, each offering distinct advantages and challenges.",
+    title: "Choose Your Champion",
+    text: "Pick a mythological hero or monster, each with unique stats and divine abilities.",
   },
   {
     step: "2",
-    title: "Enter the Challenge",
-    text: "Dive into diverse environments where strategic battles and rivals await.",
+    title: "Enter the Arena",
+    text: "Step into ancient battlegrounds where waves of enemies and rival champions await.",
   },
   {
     step: "3",
-    title: "Acquire Power-Ups & Boosts",
-    text: "Overcome obstacles to collect enhancements and tokens, evolving your strategy mid-game.",
+    title: "Collect Power & Relics",
+    text: "Defeat enemies to gather relics, power orbs, and upgrade tokens to evolve mid-fight.",
   },
   {
     step: "4",
-    title: "Master the Gauntlet",
-    text: "Adapt and unleash powerful combinations as new challenges emerge.",
+    title: "Survive the Onslaught",
+    text: "Adapt and unleash powerful combos as elite enemies and bosses appear.",
   },
   {
     step: "5",
-    title: "Achieve Mastery",
-    text: "Climb the ranks and prove your strategic prowess.",
+    title: "Ascend the Pantheon",
+    text: "Climb the divine leaderboard and prove you're the true mythic warrior.",
   },
 ];
 
 const dailyRoutine = [
   {
-    title: "Morning Skill Drills",
-    text: "Start with a focused challenge – test your precision and speed with specific modifiers.",
+    title: "Morning Trial of Gods",
+    text: "Begin with a themed challenge — Olympus vs Underworld, with limited skills and random buffs.",
   },
   {
-    title: "Afternoon Competitive Engagements",
-    text: "The competitive arena opens – test your strategies against other players in real-time.",
+    title: "Twilight Arena Clash",
+    text: "PvP arena opens — fight other players’ heroes in real-time mythic duels.",
   },
   {
-    title: "Evening High-Stakes Raids",
-    text: "Confront advanced challenges and elite opponents in high-reward evening sessions.",
+    title: "Nightfall of Beasts",
+    text: "Face mutated mythic beasts and corrupted titans in high-reward night raids.",
   },
 ];
 
 const challengeStats = {
-  title: "Apex Challenger Mode",
+  title: "Pantheon Challenge Mode",
   description:
-    "Ready to claim your place among the elite? Enter Apex Challenger Mode – timed strategic battles with advanced modifiers, boss encounters, and global rankings.",
+    "Think you're worthy of legend? Enter the Pantheon Challenge — time-based mythic battles with elite modifiers, boss encounters, and divine rankings.",
   stats: [
-    { value: "12:00", label: "Longest Session" },
-    { value: "#1", label: "Global Skill Rank" },
-    { value: "9,999", label: "Challenges Completed" },
+    { value: "09:26", label: "Longest Arena Run" },
+    { value: "#3", label: "Global Hero Rank" },
+    { value: "7,845", label: "Battles Fought" },
   ],
 };
 

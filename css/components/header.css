@@ -100,3 +100,30 @@
   padding-bottom: 5px;
   border-bottom: 2px solid var(--accent-color); /* Changed to accent-color */
 }
+
+.mobileMenu.open + .backdrop {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark semi-transparent overlay */
+  backdrop-filter: blur(5px); /* Apply blur effect to content behind */
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 11; /* Below the mobile menu, above other content */
+  opacity: 0; /* Hidden by default */
+  pointer-events: none; /* Do not block interaction when hidden */
+  transition: opacity 0.3s ease; /* Smooth transition */
+  top: 99px; /* Start below the header */
+}
+
+@media (min-width: 768px) {
+  .backdrop {
+    display: none; /* Hide backdrop on desktop */
+  }
+}

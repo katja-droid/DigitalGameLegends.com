@@ -6,11 +6,17 @@
   background-color: var(--light-background-color); /* New background color */
   border-radius: 10px; /* Added border-radius */
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+  margin-top: 60px;
+  border: 1px solid var(--border-color);
+  list-style: none;
+  margin: 0;
+  min-height: 400px; /* Increased min-height for the section */
+  align-items: center; /* Vertically center content if there's extra space */
 }
 
 .feature-card {
   background-color: var(--card-background-color); /* New background color */
-  padding: 2rem; /* Increased padding */
+  padding: 2.5rem; /* Increased padding for more height within cards */
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Adjusted shadow */
   text-align: center; /* Centered text */
@@ -36,7 +42,7 @@
 }
 
 .feature-card__text {
-  font-size: 0.95rem; /* Adjusted font size */
-  line-height: 1.6;
-  color: var(--text-color);
+  font-size: 1.05rem; /* Increased font size */
+  line-height: 1.7;
+  color: var(--dark-text-color); /* Changed to dark-text-color for plain text */
 }

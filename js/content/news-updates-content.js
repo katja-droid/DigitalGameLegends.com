@@ -3,48 +3,48 @@ const newsPosts = [
     image: "./img/article1.jpg",
     date: "2025-03-22",
     comments: 734,
-    title: "GameLegendForge: Where Legends Are Forged on Waves",
-    text: "Dive into the aquatic arena where sharp minds and lightning reflexes lead to ultimate hydro glory.",
+    title: "Elvis Funny Face: Where Every Smile Counts!",
+    text: "Dive into the hilarious world where creativity and laughter lead to ultimate funny face glory.",
     fullText: `
-GameLegendForge redefines jet ski racing with its captivating gameplay and diverse range of skill-based challenges.<br><br>
+Elvis Funny Face redefines kids' gaming with its captivating mechanics and diverse range of creative challenges.<br><br>
 
-Every session is an exhilarating test of agility and split-second decisions — from navigating treacherous courses to outmaneuvering fierce rivals. With dynamic challenges and ever-changing water conditions, no two races feel the same. Pilots must adapt on the fly, combining instinct and precision to conquer every wave.<br><br>
+Every session is an exhilarating test of imagination and quick decisions — from creating intricate facial expressions to decorating with massive accessories. With dynamic options and ever-changing themes, no two faces feel the same. Players must adapt on the fly, combining artistic flair and humor to conquer every design.<br><br>
 
-Our platform delivers stunning visuals, fluid controls, and deep, engaging content. Whether you're mastering a new technique or refining an old one, each race feels unique and rewarding.<br><br>
+Our platform delivers stunning visuals, intuitive controls, and deep, engaging content. Whether you're mastering a new face-making technique or refining an old one, each game feels unique and rewarding.<br><br>
 
-GameLegendForge now features weekly race spotlights, top pilot strategies, and in-depth tactical guides. Because rising through the ranks takes more than raw speed — it takes consistent mastery of the waves.
+Elvis Funny Face now features weekly face spotlights, top player creations, and in-depth tutorial guides. Because rising through the ranks takes more than raw speed — it takes consistent mastery of hilarious expressions.
     `,
   },
   {
     image: "./img/article2.jpg",
     date: "2025-02-27",
     comments: 689,
-    title: "Top Hydro Tactics Dominating the Leaderboards",
-    text: "From precision turns to aggressive boost lines, the best pilots are setting new speed records in GameLegendForge.",
+    title: "Top Face-Making Strategies Dominating the Leaderboards",
+    text: "From hilarious twists to outrageous decorations, the best players are setting new funny face trends in Elvis Funny Face.",
     fullText: `
-The pursuit of excellence in GameLegendForge is intensifying, and cutting-edge racing tactics are emerging.<br><br>
+The pursuit of excellence in Elvis Funny Face is intensifying, and cutting-edge face-making tactics are emerging.<br><br>
 
-Pilots are devising unique combinations of jet ski setups, boost timings, and wave-riding techniques to excel in challenges and climb the championship ladder. Some prefer rapid-burst acceleration methods, while others rely on sustained, methodical approaches to conquer complex tracks.<br><br>
+Players are devising unique combinations of feature placements, accessory timings, and expression-creating techniques to excel in challenges and climb the championship ladder. Some prefer rapid-fire decoration methods, while others rely on sustained, methodical approaches to craft complex and comical faces.<br><br>
 
-Strategies like “Tidal Dash” or “Apex Drift” are gaining notoriety across the leaderboards.<br><br>
+Strategies like “Expressive Overload” or “Minimalist Mayhem” are gaining notoriety across the leaderboards.<br><br>
 
-Check out GameLegendForge’s weekly strategy breakdowns, where experts and top racers reveal their secrets to consistent improvement and podium-tier performance. With new tracks and features incoming, staying ahead in the evolving hydro-meta is crucial.
+Check out Elvis Funny Face’s weekly strategy breakdowns, where experts and top players reveal their secrets to consistent improvement and top-tier performance. With new accessories and features incoming, staying ahead in the evolving funny-face-meta is crucial.
     `,
   },
   {
     image: "./img/article3.jpg",
     date: "2025-01-25",
     comments: 705,
-    title: "Epic Hydro Moments: Best Races Captured in Action",
-    text: "From breathtaking overtakes to improbable comebacks, GameLegendForge is becoming the hub for viral racing highlights.",
+    title: "Epic Laugh Moments: Best Faces Captured in Action",
+    text: "From breathtakingly funny combos to improbable expressions, Elvis Funny Face is becoming the hub for viral laughter highlights.",
     fullText: `
-Remarkable achievements and peak performance moments are flooding social media as pilots showcase their mastery.<br><br>
+Remarkable achievements and peak humor moments are flooding social media as players showcase their mastery.<br><br>
 
-Clips of a racer executing a perfect hydro-drift to overtake at the last second, or a tactical genius pulling off an impossible comeback, are garnering millions of views. The built-in replay and analysis features make it easy to capture highlight-worthy footage.<br><br>
+Clips of a player executing a perfect combination to create the most absurd face at the last second, or a tactical genius pulling off an impossible expression, are garnering millions of views. The built-in replay and analysis features make it easy to capture highlight-worthy footage.<br><br>
 
-Weekly race contests hosted on GameLegendForge offer rewards for categories like “Most Daring Maneuver” or “Ultimate Comeback.”<br><br>
+Weekly game contests hosted on Elvis Funny Face offer rewards for categories like “Most Outrageous Face” or “Ultimate Hilarious Combo.”<br><br>
 
-Whether you're streaming your journey to the championship or just sharing a remarkable achievement, GameLegendForge is designed for moments that feel truly exceptional.
+Whether you're streaming your journey to the championship or just sharing a remarkable achievement, Elvis Funny Face is designed for moments that feel truly exceptional.
     `,
   },
 ];

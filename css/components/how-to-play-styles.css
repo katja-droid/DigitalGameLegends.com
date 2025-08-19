@@ -1,43 +1,30 @@
 .how-to-play__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
-  padding: 50px;
-  background-color: var(--secondary-background-color);
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  margin-top: 60px;
-  border: 1px solid var(--border-color);
-  list-style: none;
-  margin: 0;
+  grid-template-columns: 1fr; /* Make cards full width on all screens */
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 .how-step {
-  display: grid;
-  grid-template-columns: 60px 1fr;
-  grid-template-rows: auto auto;
-  grid-template-areas:
-    "badge title"
-    "badge text";
-  column-gap: 16px;
-  row-gap: 8px;
-  align-items: start;
-  text-align: left;
-  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Center text */
   background-color: var(--card-background-color);
-  border-radius: 14px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid var(--border-color);
-}
 
-.how-step:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .how-step__circle {
-  grid-area: badge;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -48,23 +35,19 @@
   justify-content: center;
   font-size: 1.6rem;
   font-weight: 800;
+  margin-bottom: 20px;
   border: 1px solid var(--border-color);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
 }
 
-.how-step .subtitle {
-  grid-area: title;
-  color: var(--primary-text-color);
-  margin: 0;
-  font-size: 1.4rem;
-  line-height: 1.25;
-  text-transform: none;
+.how-step__title {
+  font-size: 1.8rem;
+  color: var(--heading-color);
+  margin-bottom: 15px;
 }
 
-.how-step__text {
-  grid-area: text;
-  color: var(--dark-text-color);
+.how-step__description {
   font-size: 1rem;
+  color: var(--text-color);
   line-height: 1.6;
-  margin: 0;
 }

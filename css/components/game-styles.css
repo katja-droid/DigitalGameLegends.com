@@ -31,6 +31,61 @@
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   }
+
+  @media (max-width: 768px) {
+    display: none; /* Hide the embedded iframe on mobile */
+  }
+}
+
+.game-mobile-preview {
+  display: none; /* Hidden by default for desktop */
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Match desktop game embed width */
+  padding-bottom: 75%; /* Aspect ratio for the preview */
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+
+  @media (max-width: 768px) {
+    display: block; /* Show on mobile */
+    width: 100vw; /* Full viewport width on mobile */
+    max-width: unset; /* Remove max-width constraint on mobile */
+    padding-bottom: 150%; /* Taller aspect ratio for mobile preview */
+    border-radius: 0; /* No border radius on full width mobile */
+  }
+}
+
+.game-mobile-preview .game-preview-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the container */
+  filter: brightness(0.7); /* Slightly dim the image */
+}
+
+.game-mobile-preview .play-game-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--primary-color); /* Use primary violet */
+  color: var(--light-text-color);
+  border: none;
+  padding: 15px 30px;
+  border-radius: 50px; /* Pill shape */
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    background-color: var(--accent-color); /* Accent violet on hover */
+    transform: translate(-50%, -50%) scale(1.05);
+  }
 }
 
 .fullscreen-button {
@@ -51,6 +106,7 @@
     background-color: rgba(0, 0, 0, 0.8);
   }
 }
+
 .game-description {
   flex: none; /* Remove flex grow/shrink */
   max-width: 800px; /* Match iframe width */
@@ -121,24 +177,42 @@
   justify-content: flex-end;
 
   @media (max-width: 768px) {
-  
+
   }
 }
 
 .custom-fullscreen-content {
-  width: 90%;
-  height: 0;
-  padding-bottom: 50.625%; /* 16:9 aspect ratio for 90% width (90% * (640/1136)) */
+  width: 100vw; /* Make it 100% of viewport width */
+  height: 100vh; /* Make it 100% of viewport height */
+  padding-bottom: 0; /* Remove padding-bottom as height is explicit */
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   flex-grow: 1; /* Allow content to grow and fill available space */
+  overflow: hidden; /* Ensure no scrolling on the container */
+  border-radius: 0; /* No border radius on full screen */
 
-  @media (max-width: 768px) {
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    padding-bottom: 0;
+    border: none;
+    overflow: hidden; /* Crucial: Ensure no scrolling within the iframe content */
+  }
+
+  @media (max-width: 768px) {
+    width: 100vw; /* Ensure 100vw on mobile */
+    height: 100vh; /* Ensure 100vh on mobile */
+    padding-bottom: 0; /* No padding-bottom needed as height is explicit */
+    margin-top: 0; /* Remove margin-top from previous attempts */
+    border-radius: 0; /* Remove border radius on mobile */
+
+    iframe {
+        overflow: hidden; /* Ensure no scrolling */
+    }
   }
 }
 
@@ -149,4 +223,5 @@
   width: 100%;
   height: 100%;
   border: none;
+  overflow: hidden; /* Ensure no scrolling for all fullscreen iframes */
 }

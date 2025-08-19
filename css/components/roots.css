@@ -1,24 +1,24 @@
 :root {
   --font-family: "Roboto", sans-serif;
 
-  --primary-color: #007bff; /* Royal Blue */
-  --secondary-color: #ADD8E6; /* Light Blue */
-  --accent-color: #ffb547; /* Tomato - a shade of coral */
+  --primary-color: #6A0DAD; /* Deep Violet */
+  --secondary-color: #912ae6; /* Medium Violet */
+  --accent-color: #773ba8; /* Light Violet */
 
-  --primary-text-color: #212529; /* Dark Gray, for main titles */
-  --secondary-text-color: #495057; /* Gray, for subtitles/important text */
-  --light-text-color: #FFFFFF; /* Changed to pure white */
-  --dark-text-color: #343A40; /* Darker Gray, for text on light BG */
+  --primary-text-color: #FFFFFF; /* White, for main titles on dark violet */
+  --secondary-text-color: #E0E0E0; /* Off-white, for subtitles/important text on violet */
+  --light-text-color: #FFFFFF; /* Pure white */
+  --dark-text-color: #330066; /* Very Dark Violet, for text on light BG */
 
-  --link-color: #17A2B8; /* Info Blue */
-  --hover-color: #0056B3; /* Darker Blue for hover */
+  --link-color: #A366D6; /* Medium Violet for links */
+  --hover-color: #4B0082; /* Indigo, darker for hover */
 
-  --main-background-color: #F8F9FA; /* Off-white for base */
-  --header-background-color: #007bff; /* Same as primary color */
-  --border-color: #6C757D; /* Gray, for borders */
+  --main-background-color: #EDE8F2; /* Very Light Violet/Gray for base */
+  --header-background-color: #6A0DAD; /* Same as primary color */
+  --border-color: #8C47A2; /* Muted Violet, for borders */
   --card-background-color: #FFFFFF; /* White for cards on light BG */
-  --secondary-background-color: #E0F2F7; /* Light Blue for sections */
-  --dark-background-color: #343A40; /* Darker Gray for sections */
+  --secondary-background-color: #CCA3E5; /* Light Lavender for sections */
+  --dark-background-color: #330066; /* Very Dark Violet for sections */
 
   --gradient-primary: linear-gradient(to right, var(--primary-color), var(--secondary-color));
   --gradient-secondary: linear-gradient(to right, var(--accent-color), var(--accent-color));

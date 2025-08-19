@@ -2,14 +2,14 @@
   width: 100%;
   max-width: 1440px;
   margin: 90px  auto ;
-  padding: 30px 15px; /* Adjusted padding */
+  padding: 100px 15px 30px 15px; /* Adjusted padding-top to account for navbar */
   color: var(--third-color);
   @media (min-width: 768px) {
-    padding: 50px 80px; /* Adjusted padding for larger screens */
+    padding: 120px 80px 50px 80px; /* Adjusted padding for larger screens */
   }
 
   .hero__content {
-    padding-top: 80px; /* Adjusted padding */
+    padding-top: 0; /* Removed this specific padding as it's handled by .hero now */
     display: flex;
     flex-direction: column; /* Stacked columns by default */
     gap: 40px;
@@ -19,6 +19,21 @@
     @media (min-width: 992px) {
       flex-direction: column; /* Keep column layout on larger screens */
       justify-content: center; /* Center content horizontally */
+    }
+  }
+
+  .hero__banner {
+    width: 100%;
+    text-align: center; /* Center content within the banner div */
+    margin-bottom: 40px; /* Add some space below the banner */
+
+    img {
+      display: block; /* Ensures margin auto works */
+      max-width: 100%; /* Ensure image is responsive */
+      height: auto;
+      margin: 0 auto; /* Center the image */
+      border-radius: 15px; /* Consistent border-radius */
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25); /* Add a subtle shadow */
     }
   }
 
@@ -88,7 +103,7 @@
     margin-bottom: 25px;
     line-height: 1;
     text-transform: uppercase;
-    color: var(--primary-text-color);
+    color: var(--primary-color); /* Changed to primary violet */
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
   }
 
@@ -96,7 +111,7 @@
     font-size: 1.6rem; /* Adjusted font size */
     font-weight: 700; /* Adjusted font weight */
     margin-bottom: 30px; /* Adjusted margin */
-    color: var(--secondary-text-color); /* Changed color variable */
+    color: var(--accent-color); /* Changed to accent violet */
   }
 
   .hero__desc {

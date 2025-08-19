@@ -62,15 +62,27 @@ const customFullscreenOverlay = document.getElementById("custom-fullscreen-overl
 const exitCustomFullscreenButton = document.getElementById("exit-custom-fullscreen");
 const customFullscreenContent = document.querySelector(".custom-fullscreen-content");
 const originalGameEmbed = document.querySelector(".game-embed");
+const mobilePlayButton = document.querySelector(".play-game-button");
+
+const openFullscreenGame = () => {
+  customFullscreenOverlay.classList.add("active");
+  // Temporarily append the iframe to the fullscreen container
+  // The iframe will be moved back when exiting fullscreen
+  customFullscreenContent.appendChild(gameIframe);
+};
+
+const closeFullscreenGame = () => {
+  customFullscreenOverlay.classList.remove("active");
+  // Move the iframe back to its original parent
+  originalGameEmbed.appendChild(gameIframe);
+};
 
 if (fullscreenButton && gameIframe && customFullscreenOverlay && exitCustomFullscreenButton && customFullscreenContent && originalGameEmbed) {
-  fullscreenButton.addEventListener("click", () => {
-    customFullscreenOverlay.classList.add("active");
-    customFullscreenContent.appendChild(gameIframe);
-  });
+  fullscreenButton.addEventListener("click", openFullscreenGame);
+  exitCustomFullscreenButton.addEventListener("click", closeFullscreenGame);
+}
 
-  exitCustomFullscreenButton.addEventListener("click", () => {
-    customFullscreenOverlay.classList.remove("active");
-    originalGameEmbed.appendChild(gameIframe);
-  });
+// Handle mobile play button
+if (mobilePlayButton && gameIframe && customFullscreenOverlay && exitCustomFullscreenButton && customFullscreenContent && originalGameEmbed) {
+  mobilePlayButton.addEventListener("click", openFullscreenGame);
 }

@@ -1,9 +1,9 @@
 const heroContent = {
-  badge: "GameLegendForge - Adrenaline Rush",
-  title: "Ride the Waves. Conquer the Chaos. Become the Champion.",
-  subtitle: "Master the Tides. Unleash Your Speed. Claim Victory.",
+  badge: "Elvis Funny Face - Unleash Your Inner Comedian!",
+  title: "Laugh Out Loud. Get Creative. Design the Funniest Elvis Faces.",
+  subtitle: "Twist. Stretch. Decorate. Your Imagination is the Limit.",
   description:
-    "Welcome to GameLegendForge – where raw power meets strategic precision! Choose your custom jet ski, brave treacherous waters, and outmaneuver rivals in a relentless race for glory. Are you ready to feel the spray and seize the championship?",
+    "Welcome to Elvis Funny Face – the ultimate online game for kids who love to laugh and get creative! Dive into a world of endless fun where you can transform Elvis into the most hilarious characters. Are you ready to unleash your inner comedian and make everyone smile?",
 };
 
 function renderHeroSection() {

@@ -8,19 +8,19 @@
 
   background-color: var(--header-background-color);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 25px; /* Increased padding */
+  padding-bottom: 25px; /* Increased padding */
 }
 .headerContainer {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  gap: 25px;
+  gap: 35px; /* Increased gap */
 }
 .logo {
   font-weight: bold;
-  font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem); /* Adjusted font size */
+  font-size: clamp(1.8rem, 2.5vw + 1rem, 2.8rem); /* Increased font size */
   letter-spacing: 2px; /* Added letter-spacing */
   text-transform: uppercase;
   color: var(--light-text-color);
@@ -47,7 +47,7 @@
   &.open {
     position: absolute;
     right: 0;
-    top: 65px; /* Adjusted top to align with new header height */
+    top: 105px; /* Adjusted top to align with new header height */
     z-index: 12;
 
     width: 100%;
@@ -70,23 +70,23 @@
 .mobileMenuList {
   display: flex;
   flex-direction: column;
-  gap: 15px; /* Adjusted gap */
+  gap: 20px; /* Increased gap */
   align-items: center;
 
   @media (min-width: 768px) {
     flex-direction: row;
-    gap: 30px; /* Adjusted gap */
+    gap: 40px; /* Increased gap */
   }
 }
 
 .mobileMenuLink {
   font-weight: 500;
-  font-size: clamp(1.1rem, 0.5vw + 0.9rem, 1.3rem);
+  font-size: clamp(1.2rem, 0.6vw + 1rem, 1.4rem); /* Increased font size */
   color: var(--light-text-color); /* Applied new text color */
 
   &:hover,
   &:focus {
-    color: var(--accent-color); /* Changed to accent-color */
+   font-weight: 700; /* Changed to accent-color */
   }
 }
 
@@ -113,7 +113,7 @@
   opacity: 0; /* Hidden by default */
   pointer-events: none; /* Do not block interaction when hidden */
   transition: opacity 0.3s ease; /* Smooth transition */
-  top: 65px; /* Start below the header */
+  top: 105px; /* Start below the header */
 }
 
 @media (min-width: 768px) {

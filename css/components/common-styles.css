@@ -7,53 +7,75 @@
   padding-right: clamp(15px, calc(5px + 2vw), 40px); /* Adjusted padding */
 }
 .section {
-  padding-top: clamp(30px, calc(30px + 8vw), 30px); /* Increased padding */
-  padding-bottom: clamp(30px, calc(30px + 8vw), 50px); /* Increased padding */
+  padding-top: clamp(100px, calc(100px + 8vw), 120px); /* Increased padding to account for fixed navbar */
+  padding-bottom: clamp(30px, calc(30px + 8vw), 50px);
 }
 .main-title {
   font-weight: 900;
   font-size: clamp(2.5rem, 3.5vw + 2rem, 4.5rem); /* Increased font size */
   line-height: 1.1; /* Adjusted line height */
   text-transform: uppercase;
-  color: var(--primary-text-color);
+  color: var(--accent-color); /* Changed to bright violet */
   text-align: center;
   margin-bottom: 50px; /* Increased margin-bottom */
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Added text shadow */
+  text-shadow: none; /* Removed text shadow */
+  letter-spacing: 2px; /* Added letter spacing */
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
 }
+
+.main-title:hover {
+  transform: scale(1.02); /* Slight scale on hover */
+  color: var(--primary-color); /* Change color on hover to a darker violet */
+}
+
 .title {
   width: 100%;
   margin-bottom: 40px; /* Adjusted margin */
-  color: var(--secondary-text-color);
+  color: var(--accent-color); /* Changed to bright violet */
   font-weight: 800; /* Increased font weight */
   font-size: clamp(2rem, 2.5vw + 1.5rem, 3.5rem); /* Increased font size */
   line-height: 1.2; /* Adjusted line height */
   text-align: center;
   text-transform: uppercase;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Added text shadow */
+  text-shadow: none; /* Removed text shadow */
+  letter-spacing: 1px; /* Added letter spacing */
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
 }
+
+.title:hover {
+  transform: translateY(-3px); /* Slight lift on hover */
+  color: var(--secondary-color); /* Change color on hover to a darker violet */
+}
+
 .subtitle {
   font-weight: 700;
   text-align: center;
   font-size: clamp(1.4rem, 1vw + 1rem, 2.2rem); /* Increased font size */
   line-height: 1.4; /* Adjusted line height */
-  color: var(--primary-text-color); /* Changed color variable */
+  color: var(--accent-color); /* Changed to bright violet */
+  transition: color 0.3s ease-in-out; /* Smooth transition for hover effects */
 }
+
+.subtitle:hover {
+  color: var(--primary-color); /* Change color on hover to a darker violet */
+}
+
 .text {
-  font-size: clamp(1rem, 0.3vw + 0.9rem, 1.2rem); /* Adjusted font size */
-  line-height: 1.7; /* Adjusted line height */
+  font-size: clamp(1.1rem, 0.4vw + 1rem, 1.3rem); /* Increased font size */
+  line-height: 1.8; /* Adjusted line height */
   text-align: left;
-  color: var(--dark-text-color); /* Changed color variable */
+  color: var(--dark-text-color);
 }
 .desc {
   text-align: center;
-  font-size: clamp(0.95rem, 0.2vw + 0.85rem, 1.1rem); /* Adjusted font size */
-  line-height: 1.6; /* Adjusted line height */
-  color: var(--secondary-text-color); /* Changed color variable */
+  font-size: clamp(1.05rem, 0.3vw + 0.95rem, 1.2rem); /* Increased font size */
+  line-height: 1.7; /* Adjusted line height */
+  color: var(--dark-text-color); /* Changed to darker text color */
 }
 /* Button styling */ 
 .button2 {
   display: inline-block;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smoother transition */
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -65,25 +87,27 @@
   background: var(--primary-color); /* Button background */
   border: 1px solid var(--primary-color); /* Button border */
   font-weight: 700; /* Increased font-weight */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Added subtle shadow */
 }
 
 .button2:active {
   color: var(--accent-color); /* Active state text color */
-  box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.3), inset -2px -2px 8px rgba(255, 255, 255, 0.5); /* Adjusted shadow */
+  box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.4), inset -2px -2px 8px rgba(255, 255, 255, 0.3); /* Adjusted shadow */
+  transform: scale(0.98); /* Slight press effect */
 }
 
 .button2:before {
   content: "";
   position: absolute;
   left: 50%;
-  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  transform: translateX(-50%) scaleY(1) scaleX(1.25); /* Adjusted scale */
   top: 100%;
   width: 140%;
   height: 180%;
-  background-color: rgba(255, 255, 255, 0.1); /* Adjusted transparency to white */
+  background-color: var(--secondary-color); /* Changed to secondary color */
   border-radius: 50%;
   display: block;
-  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smoother transition */
   z-index: -1;
 }
 
@@ -91,32 +115,34 @@
   content: "";
   position: absolute;
   left: 55%;
-  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  transform: translateX(-50%) scaleY(1) scaleX(1.45); /* Adjusted scale */
   top: 180%;
   width: 160%;
   height: 190%;
-  background-color: var(--accent-color);
+  background-color: var(--primary-color); /* Changed to primary color */
   border-radius: 50%;
   display: block;
-  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smoother transition */
   z-index: -1;
 }
 
 .button2:hover {
   color: var(--light-text-color); /* Hover text color */
-  border: 1px solid var(--accent-color); /* Hover border color */
+  border: 1px solid var(--primary-color); /* Hover border color */
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* More pronounced shadow on hover */
 }
 
 .button2:hover:before {
   top: -35%;
-  background-color: var(--accent-color);
-  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  background-color: var(--primary-color); /* Changed to primary color */
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8); /* Adjusted scale */
 }
 
 .button2:hover:after {
   top: -45%;
-  background-color: var(--accent-color);
-  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  background-color: var(--secondary-color); /* Changed to secondary color */
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8); /* Adjusted scale */
 }
 
 .no-scroll {

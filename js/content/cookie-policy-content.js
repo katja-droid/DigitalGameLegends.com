@@ -1,59 +1,59 @@
 const cookiePolicyContent = {
-  title: "GameLegendForge Data Privacy: Cookie Guidelines",
+  title: "Our Cookie Policy for Elvis Funny Face",
   sections: [
     {
-      heading: "Introducing Our Digital Footprint Tracking",
+      heading: "Understanding Our Use of Cookies in Elvis Funny Face",
       paragraphs: [
-        `This Data Privacy Policy clarifies how we, GameLegendForge, utilize cookies and similar technologies to enhance your journey on our platform (referred to as the “Site”). It outlines what these digital trackers are, their purpose, and your control over their use.`,
+        `This Cookie Policy explains how Digital Game Legends uses cookies and similar technologies to enhance your experience with Elvis Funny Face and our website (referred to as the “Site”). It clarifies what these technologies are, how we use them, and your choices regarding their use.`,
       ],
     },
     {
-      heading: "Demystifying Cookies",
+      heading: "What Are Cookies?",
       paragraphs: [
-        `Cookies are tiny data packets stored on your device as you navigate a website. Their primary role is to ensure smooth site operations, improve user experience, and gather anonymous analytical data.`,
+        `Cookies are small text files stored on your device when you visit a website. They help websites function efficiently, improve user experience, and gather anonymous data for analytics.`,
       ],
     },
     {
-      heading: "Our Cookie Categories",
+      heading: "Types of Cookies We Use in Elvis Funny Face",
       paragraphs: [
-        `<strong>Core Functionality Cookies:</strong> Essential for basic website operations, enabling features like seamless page transitions and secure account access.`,
-        `<strong>Performance Analysis Cookies:</strong> These help us collect anonymous data on how visitors interact with our website, empowering us to continuously optimize its performance.`,
-        `<strong>Personalization Cookies:</strong> These remember your preferences, such as language or regional settings, to deliver a more customized and immersive experience.`,
-        `<strong>Tailored Advertising Cookies:</strong> Utilized to present advertisements that are more relevant to your interests, manage ad frequency, and measure the effectiveness of our promotional campaigns.`,
+        `<strong>Essential Cookies:</strong> These are crucial for the basic operation of Elvis Funny Face, enabling features like seamless gameplay and secure access.`,
+        `<strong>Analytics Cookies:</strong> We use these to collect anonymous information about how players interact with Elvis Funny Face and our site, which helps us improve its performance and design.`,
+        `<strong>Preference Cookies:</strong> These cookies remember your settings and preferences within Elvis Funny Face, such as language or game display options, to provide a more personalized experience.`,
+        `<strong>Advertising Cookies:</strong> Used to display advertisements that are more relevant to your interests, limit how often you see an ad, and measure the effectiveness of our advertising campaigns related to Elvis Funny Face.`,
       ],
     },
     {
-      heading: "Why We Implement Cookies",
+      heading: "Why We Use Cookies in Elvis Funny Face",
       paragraphs: [
         `Our use of cookies is to:`,
 
-        `• Ensure seamless website functionality<br>• Analyze user behavior to continuously improve our services<br>• Deliver personalized content and advertising<br>• Retain your personalized settings and preferences`,
+        `• Ensure Elvis Funny Face functions correctly<br>• Understand how you use our services to make continuous improvements to the game<br>• Provide you with content and advertising tailored to your interests in funny face games<br>• Remember your personal settings and preferences within Elvis Funny Face`,
       ],
     },
     {
-      heading: "Your Control Over Cookies",
+      heading: "Your Choices Regarding Cookies for Elvis Funny Face",
       paragraphs: [
-        `You maintain the power to accept or decline cookies through your web browser settings. Be advised that adjusting these settings may impact the availability and performance of certain features on our platform.`,
+        `You have the option to accept or decline cookies through your web browser settings. Please note that disabling cookies may affect the functionality and your experience on certain parts of Elvis Funny Face and our website.`,
       ],
     },
     {
-      heading: "Managing Your Cookie Preferences",
+      heading: "How to Manage Your Cookie Preferences for Elvis Funny Face",
       paragraphs: [
-        `Most web browsers provide integrated tools for managing your cookie preferences. For popular browsers, refer to these guides:`,
+        `Most web browsers offer tools for managing your cookie settings. For more information on how to manage cookies in popular browsers, you can refer to their respective guides:`,
 
         `• Google Chrome<br>• Mozilla Firefox<br>• Microsoft Edge<br>• Apple Safari`,
       ],
     },
     {
-      heading: "Policy Revisions",
+      heading: "Updates to Our Policy for Elvis Funny Face",
       paragraphs: [
-        `This Data Privacy Policy may be periodically updated to reflect evolving operational practices or legal mandates. We encourage regular review to stay informed.`,
+        `We may update this Cookie Policy from time to time to reflect changes in our practices or for legal reasons related to Elvis Funny Face. We encourage you to review this policy periodically to stay informed.`,
       ],
     },
     {
-      heading: "Reaching Out",
+      heading: "Contacting Us About Elvis Funny Face Cookies",
       paragraphs: [
-        `For any inquiries or concerns regarding this Data Privacy Policy, please do not hesitate to contact our support team.`,
+        `If you have any questions or concerns about this Cookie Policy, please feel free to contact our support team.`,
       ],
     },
   ],

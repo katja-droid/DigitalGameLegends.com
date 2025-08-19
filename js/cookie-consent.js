@@ -1,13 +1,14 @@
 function showCookieModal() {
     const cookieAccepted = localStorage.getItem("cookieAccepted");
+    const cookieModal = document.getElementById("cookie-modal");
   
     if (!cookieAccepted) {
-      document.getElementById("cookie-modal").style.display = "block";
+      cookieModal.classList.add("show");
     }
   
     document.getElementById("accept-cookies").addEventListener("click", () => {
       localStorage.setItem("cookieAccepted", "true");
-      document.getElementById("cookie-modal").style.display = "none";
+      cookieModal.classList.remove("show");
     });
   }
   

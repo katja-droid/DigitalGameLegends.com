@@ -1,30 +1,34 @@
 .disclaimer-block,
 .cookie-policy-block,
-.privacy-policy-block {
-  margin-bottom: 35px; /* Adjusted margin-bottom */
-  padding: 25px; /* Added padding */
-  background-color: var(--card-background-color); /* New background color */
-  border-radius: 10px; /* Added border-radius */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Added subtle shadow */
+.privacy-policy-block,
+.about-block {
+  margin-bottom: 35px;
+  padding: 30px; /* Increased padding */
+  background-color: var(--card-background-color);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  min-height: 200px; /* Ensure minimum height for these blocks */
 }
 
 .disclaimer-block h3,
 .cookie-policy-block h3,
-.privacy-policy-block h3 {
-  margin-bottom: 12px; /* Adjusted margin-bottom */
+.privacy-policy-block h3,
+.about-block h3 {
+  margin-bottom: 15px; /* Increased margin-bottom */
 
-  font-weight: 700; /* Adjusted font weight */
-  font-size: clamp(1.2rem, 0.8vw + 1rem, 1.6rem); /* Adjusted font size */
-  line-height: 1.4; /* Adjusted line height */
+  font-weight: 700;
+  font-size: clamp(1.3rem, 0.9vw + 1rem, 1.8rem); /* Increased font size */
+  line-height: 1.3; /* Adjusted line height */
   text-transform: uppercase;
-  color: var(--primary-color); /* New color variable */
+  color: var(--primary-color);
 }
 
 .disclaimer-block p,
 .cookie-policy-block p,
-.privacy-policy-block p {
-  font-size: clamp(0.95rem, 0.15vw + 0.9rem, 1.05rem); /* Adjusted font size */
-  line-height: 1.7; /* Adjusted line height */
-  text-align: left; /* Changed to left align */
-  color: var(--dark-text-color); /* New color variable */
+.privacy-policy-block p,
+.about-block p {
+  font-size: clamp(1rem, 0.2vw + 0.95rem, 1.15rem); /* Increased font size */
+  line-height: 1.8; /* Adjusted line height */
+  text-align: left;
+  color: var(--dark-text-color);
 }

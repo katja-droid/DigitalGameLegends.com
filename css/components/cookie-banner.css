@@ -1,49 +1,84 @@
 .cookie-modal {
   position: fixed;
   bottom: 0;
+  left: 0;
+  right: 0;
   z-index: 999; /* Higher z-index to ensure it's on top */
 
   display: none;
   width: 100%;
-  padding: 15px 20px; /* Adjusted padding */
-  background-color: var(--dark-background-color); /* Changed to a solid color */
-  color: #fff;
-  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Adjusted shadow for bottom */
+  padding: 20px 25px; /* Adjusted padding */
+  background-color: var(--dark-background-color); /* Dark violet background */
+  color: var(--light-text-color); /* Light text for contrast */
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+  animation: slideUp 0.5s ease-out forwards; /* Slide up animation */
 }
-.cookie-modal .text { color: #fff; }
+
+.cookie-modal.show {
+  display: block; /* Control visibility with a class */
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.cookie-modal .text {
+  color: var(--light-text-color);
+  font-size: 1.05rem; /* Slightly larger text */
+}
+
 .cookie-modal-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between; /* Changed to space-between */
-  gap: 20px; /* Adjusted gap */
-  max-width: 1200px; /* Max-width for content */
-  margin: 0 auto; /* Center content */
-  padding: 0 10px; /* Added horizontal padding */
+  justify-content: space-between;
+  gap: 25px; /* Adjusted gap */
+  max-width: 1300px; /* Increased max-width */
+  margin: 0 auto;
+  padding: 0 15px; /* Added horizontal padding */
 
   @media (min-width: 500px) {
     flex-direction: row;
+    padding: 0;
   }
 }
+
 .cookie-modal a {
-  color: #fff;
-  text-decoration: underline;
+  color: var(--accent-color); /* Violet link color */
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent-color); /* Underline effect */
+  transition: color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+.cookie-modal a:hover {
+  color: var(--secondary-color); /* Darker violet on hover */
+  border-color: var(--secondary-color);
 }
 
 .cookie-btn {
-  margin-top: 0; /* Remove top margin */
-  padding: 12px 25px; /* Adjusted padding */
-  border: none;
-  border-radius: 6px;
-
-  background-color: var(--accent-color);
-  color: var(--dark-text-color); /* Adjusted to dark text color for contrast */
+  margin-top: 0;
+  padding: 14px 30px; /* Increased padding */
+  border: 2px solid var(--accent-color); /* Violet border */
+  border-radius: 8px; /* More rounded corners */
+  background-color: var(--accent-color); /* Accent color background */
+  color: var(--dark-text-color); /* Dark text for contrast */
   font-weight: bold;
-  font-size: 1rem; /* Adjusted font size */
-  line-height: normal; /* Reset line height */
-  transition: background 0.3s ease;
+  font-size: 1.1rem; /* Slightly larger font */
+  line-height: normal;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
 }
 
 .cookie-btn:hover {
-  background-color: var(--hover-color);
+  background-color: var(--primary-color); /* Primary violet on hover */
+  border-color: var(--primary-color);
+  color: var(--light-text-color); /* Light text on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+}
+
+.cookie-btn:active {
+  transform: translateY(0); /* Press effect */
+  box-shadow: none;
 }

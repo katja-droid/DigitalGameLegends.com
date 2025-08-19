@@ -1,7 +1,7 @@
 .footer {
   background-color: var(--header-background-color);
   color: var(--light-text-color); /* Adjusted to light text color */
-  padding: 30px 0;
+  padding: 40px 0; /* Increased padding */
 
 
 }
@@ -17,7 +17,7 @@
 .footer-bottom {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px; /* Increased gap */
   justify-content: center;
   align-items: center;
   @media (min-width:768px) {
@@ -33,10 +33,13 @@
 }
 .footer-nav {
   display: flex;
-  gap: 15px;
+  flex-wrap: wrap; /* Allow wrapping for better responsiveness */
+  justify-content: center; /* Center links on smaller screens */
+  gap: 20px; /* Increased gap */
 }
 .footer-nav a {
   color: var(--light-text-color); /* Ensure link color is visible */
+  font-size: clamp(1rem, 0.4vw + 0.9rem, 1.15rem); /* Increased font size */
   &:hover {
     color: var(--link-color); /* Changed to new link color variable */
   }

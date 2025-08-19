@@ -1,16 +1,18 @@
 const featuredGameContent = {
-  title: "Game Legend Forge: Aqua Adrenaline",
+  title: "Elvis Funny Face: Unleash Your Creative Side!",
   description:
-    "Dive into the thrilling world of GameLegendForge, a meme-fueled jet ski racer! Navigate wild waters, hit every checkpoint, and dodge chaotic obstacles in a quest for hydro supremacy. Experience over-the-top visuals and sounds as you master the waves, deploy turbo boosts, and become the ultimate champion of the liquid tracks.",
+    "Step into the whimsical world of Elvis Funny Face, where laughter is the best game! Get ready to twist, stretch, and decorate Elvis's face to create the funniest expressions. With intuitive controls and endless possibilities, you'll be designing hilarious masterpieces in no time. Share your creations and challenge your friends to make even funnier faces!",
   features: [
-    "High-speed jet ski action",
-    "Unforgettable meme characters",
-    "Dynamic water environments with hazards",
-    "Strategic turbo boost deployment",
-    "Race to claim the top trophy",
+    "Intuitive drag-and-drop controls",
+    "Wide variety of accessories and features",
+    "Endless combinations for unique faces",
+    "Fun and engaging for all ages",
+    "Share your funniest creations with friends",
   ],
 };
 
+// Removed as content moved to advantages.html
+/*
 const gameFeatures = [
   {
     title: "Wave-Riding Showdowns",
@@ -49,30 +51,31 @@ const gameFeatures = [
     text: "Get prompt assistance from our team for any queries or issues.",
   },
 ];
+*/
 
 const dailyRoutine = [
   {
-    title: "Morning Tidal Drills",
-    text: "Start your day with focused challenges – test your precision and speed in various water conditions.",
+    title: "Morning Face-Offs",
+    text: "Start your day by creating hilarious new expressions for Elvis, stretching your imagination to its limits.",
   },
   {
-    title: "Afternoon Apex Competitions",
-    text: "Enter the competitive arena to test your racing strategies against other players in real-time battles.",
+    title: "Afternoon Creativity Boost",
+    text: "Dive into more intricate designs and discover new combinations for endless laughter as the day unfolds.",
   },
   {
-    title: "Evening Turbo Tournaments",
-    text: "Confront advanced challenges and elite opponents in high-stakes evening sessions for ultimate rewards.",
+    title: "Evening Funny Face Challenges",
+    text: "Compete with friends or family to see who can make the funniest Elvis face before bedtime.",
   },
 ];
 
 const challengeStats = {
-  title: "Hydro Gauntlet Mode",
+  title: "The Ultimate Funny Face Challenge",
   description:
-    "Ready to prove your hydro supremacy? Enter Hydro Gauntlet Mode – timed, high-speed races with extreme weather conditions, boss encounters, and global rankings that push your skills to the limit.",
+    "Think you're the master of funny faces? Test your creativity in Elvis Funny Face, where every twist and stretch brings new laughter! Share your most hilarious creations with the world and see if you can inspire the most smiles.",
   stats: [
-    { value: "15:00", label: "Longest Ride" },
-    { value: "#1", label: "Global Racer Rank" },
-    { value: "10,000+", label: "Races Completed" },
+    { value: "1,000,000+", label: "Faces Created" },
+    { value: "#1", label: "Most Laughed At" },
+    { value: "500+", label: "Accessories Unlocked" },
   ],
 };
 
@@ -84,6 +87,7 @@ function renderFeaturedGame() {
     featuredGameContent.description;
 
   const featureList = document.getElementById("game-feature-list");
+  featureList.innerHTML = ''; // Clear existing content
   featuredGameContent.features.forEach((feature) => {
     const li = document.createElement("li");
     li.textContent = feature;
@@ -91,6 +95,8 @@ function renderFeaturedGame() {
   });
 }
 
+// Removed renderFeatures function as content moved to advantages.html
+/*
 function renderFeatures(features) {
   const container = document.querySelector(".features__grid");
   features.forEach((feature) => {
@@ -103,6 +109,7 @@ function renderFeatures(features) {
     container.appendChild(item);
   });
 }
+*/
 
 function renderDailyRoutine(routineItems) {
   const container = document.querySelector(".daily-routine__list");
@@ -137,48 +144,33 @@ function renderChallengeSection(challengeStats) {
 const howToPlaySteps = [
   {
     step: "1",
-    title: "Select Your Craft",
-    text: "Choose your jet ski, each with unique handling and speed attributes.",
+    title: "Choose Your Elvis",
+    text: "Select from a variety of Elvis templates to start your funny face creation.",
   },
   {
     step: "2",
-    title: "Hit the Water",
-    text: "Launch into diverse aquatic environments where thrilling races and rivals await.",
+    title: "Drag & Drop Features",
+    text: "Pick hilarious eyes, noses, mouths, and accessories from the menu and drag them onto Elvis's face.",
   },
   {
     step: "3",
-    title: "Grab Boosts & Power-ups",
-    text: "Collect special items to gain temporary advantages and turn the tide of the race.",
+    title: "Resize & Rotate",
+    text: "Adjust the size and angle of each feature to create the perfect comedic effect.",
   },
   {
     step: "4",
-    title: "Master the Course",
-    text: "Adapt to unpredictable waves and unleash powerful maneuvers to overcome obstacles.",
+    title: "Add Props & Hair",
+    text: "Accessorize with wacky hats, glasses, mustaches, and outrageous hairstyles to complete your look.",
   },
   {
     step: "5",
-    title: "Achieve Victory",
-    text: "Cross the finish line first, climb the ranks, and prove your jet ski prowess.",
+    title: "Save & Share",
+    text: "Once your masterpiece is complete, save it to your gallery and share it with friends for a good laugh!",
   },
   {
     step: "6",
-    title: "Refine Your Technique",
-    text: "Continuously improve your racing lines and boost timing through practice runs.",
-  },
-  {
-    step: "7",
-    title: "Compete Worldwide",
-    text: "Challenge players globally and dominate the competitive leaderboards.",
-  },
-  {
-    step: "8",
-    title: "Unlock New Tracks",
-    text: "Gain access to exclusive courses and higher difficulty races as you progress.",
-  },
-  {
-    step: "9",
-    title: "Forge Your Legend",
-    text: "Cement your name in the hall of champions with consistent top performance.",
+    title: "Challenge Friends",
+    text: "Send your funniest creations to friends and challenge them to make an even more hilarious Elvis face!",
   },
 ];
 
@@ -199,7 +191,7 @@ function renderHowToPlay(steps) {
 // INIT BOTH SECTIONS ON PAGE LOAD
 document.addEventListener("DOMContentLoaded", () => {
   renderFeaturedGame();
-  renderFeatures(gameFeatures);
+  // renderFeatures(gameFeatures); // Removed as content moved to advantages.html
   renderDailyRoutine(dailyRoutine);
   renderChallengeSection(challengeStats);
   renderHowToPlay(howToPlaySteps);

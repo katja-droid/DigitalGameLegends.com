@@ -62,7 +62,7 @@
   background: rgba(0, 0, 0, 0.06);
   border: 1px solid var(--border-color);
   border-radius: 999px;
-  color: var(--secondary-text-color);
+  color: var(--dark-text-color); /* Changed to dark text color */
   font-size: 0.85rem;
 }
 
@@ -75,7 +75,6 @@
   letter-spacing: 0.03em;
 }
 .meta-value {
-  color: var(--primary-text-color);
   font-weight: 600;
 }
 

@@ -1,9 +1,9 @@
 const heroContent = {
-  badge: "Domain.com - Skill Mastery",
-  title: "Elevate Your Strategy. Dominate Every Challenge.",
-  subtitle: "Insight. Practice. Victory. Your Path to Excellence.",
+  badge: "GameLegendForge - Adrenaline Rush",
+  title: "Ride the Waves. Conquer the Chaos. Become the Champion.",
+  subtitle: "Master the Tides. Unleash Your Speed. Claim Victory.",
   description:
-    "Welcome to Domain.com — your premier platform for refining strategic skills and overcoming complex challenges. Select your training, hone your tactics, and rise through the ranks. Are you ready to achieve true mastery?",
+    "Welcome to GameLegendForge – where raw power meets strategic precision! Choose your custom jet ski, brave treacherous waters, and outmaneuver rivals in a relentless race for glory. Are you ready to feel the spray and seize the championship?",
 };
 
 function renderHeroSection() {

@@ -7,39 +7,33 @@
   width: 100%;
 
   background-color: var(--header-background-color);
-  background-image: var(--gradient-primary);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .headerContainer {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   gap: 25px;
-
-  padding-top: 25px;
-  padding-bottom: 25px;
-
-  color: var(--light-text-color);
 }
 .logo {
   font-weight: bold;
-  font-size: clamp(1.2rem, 1.5vw + 0.8rem, 2rem); /* Adjusted font size */
-  letter-spacing: 1px; /* Added letter-spacing */
+  font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem); /* Adjusted font size */
+  letter-spacing: 2px; /* Added letter-spacing */
   text-transform: uppercase;
-  color: transparent; /* Applied new text color */
-  background-image: var(--gradient-secondary);
-  -webkit-background-clip: text;
-  background-clip: text;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Added text shadow */
+  color: var(--light-text-color);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Adjusted text shadow */
 }
 .menuToggle {
   border: none;
   cursor: pointer;
   display: block;
-  
+
   background-color: transparent;
-  color: var(--accent-color); /* Applied new text color */
-  font-size: 2.2rem; /* Adjusted font size */
+  color: var(--light-text-color); /* Changed to light-text-color for contrast */
+  font-size: 2.5rem; /* Adjusted font size */
 
   @media (min-width: 768px) {
     display: none;
@@ -53,18 +47,18 @@
   &.open {
     position: absolute;
     right: 0;
-    top: 99px;
+    top: 65px; /* Adjusted top to align with new header height */
     z-index: 12;
 
     width: 100%;
-    padding: 15px;
+    padding: 20px;
 
     display: flex;
     justify-content: center;
-    
-    background-color: rgba(26, 43, 60, 0.8); /* Changed to primary-color with transparency */
-    backdrop-filter: blur(15px); /* Adjusted blur */
-    -webkit-backdrop-filter: blur(15px);
+
+    background-color: var(--primary-color); /* Changed to primary-color */
+    backdrop-filter: blur(10px); /* Adjusted blur */
+    -webkit-backdrop-filter: blur(10px);
   }
 
   @media (min-width: 768px) {
@@ -76,18 +70,18 @@
 .mobileMenuList {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Adjusted gap */
+  gap: 15px; /* Adjusted gap */
   align-items: center;
 
   @media (min-width: 768px) {
     flex-direction: row;
-    gap: 25px;
+    gap: 30px; /* Adjusted gap */
   }
 }
 
 .mobileMenuLink {
-  font-weight: 600;
-  font-size: clamp(1rem, 0.451vw + 0.889rem, 1.25rem);
+  font-weight: 500;
+  font-size: clamp(1.1rem, 0.5vw + 0.9rem, 1.3rem);
   color: var(--light-text-color); /* Applied new text color */
 
   &:hover,
@@ -112,14 +106,14 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Dark semi-transparent overlay */
-  backdrop-filter: blur(5px); /* Apply blur effect to content behind */
-  -webkit-backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.6); /* Dark semi-transparent overlay */
+  backdrop-filter: blur(8px); /* Apply blur effect to content behind */
+  -webkit-backdrop-filter: blur(8px);
   z-index: 11; /* Below the mobile menu, above other content */
   opacity: 0; /* Hidden by default */
   pointer-events: none; /* Do not block interaction when hidden */
   transition: opacity 0.3s ease; /* Smooth transition */
-  top: 99px; /* Start below the header */
+  top: 65px; /* Start below the header */
 }
 
 @media (min-width: 768px) {

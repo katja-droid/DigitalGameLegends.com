@@ -1,76 +1,78 @@
 const featuredGameContent = {
-  title: "Explore the Summit of Skill: Domain.com",
+  title: "Game Legend Forge: Aqua Adrenaline",
   description:
-    "Step into the arena of champions at Domain.com – your ultimate destination for mastering strategic challenges. No downloads needed, just pure skill and thrilling competition.",
+    "Dive into the thrilling world of GameLegendForge, a meme-fueled jet ski racer! Navigate wild waters, hit every checkpoint, and dodge chaotic obstacles in a quest for hydro supremacy. Experience over-the-top visuals and sounds as you master the waves, deploy turbo boosts, and become the ultimate champion of the liquid tracks.",
   features: [
-    "Engage in rapid-fire tactical gameplay",
-    "Discover unique strategies and unlock new abilities",
-    "Seamlessly optimized for all devices, from mobile to desktop",
+    "High-speed jet ski action",
+    "Unforgettable meme characters",
+    "Dynamic water environments with hazards",
+    "Strategic turbo boost deployment",
+    "Race to claim the top trophy",
   ],
 };
 
 const gameFeatures = [
   {
-    title: "Strategic Showdowns",
-    text: "Confront a variety of formidable opponents and develop winning tactics.",
+    title: "Wave-Riding Showdowns",
+    text: "Engage in intense jet ski duels against challenging AI and real players.",
   },
   {
-    title: "Elite Skill Development",
-    text: "Enhance your abilities and refine your approach with every challenge.",
+    title: "Hydro Maneuver Mastery",
+    text: "Hone your skills and perfect your turns to dominate the aquatic courses.",
   },
   {
-    title: "Adaptable Playstyles",
-    text: "Choose from diverse approaches and customize your experience – every session is unique.",
+    title: "Customizable Rides",
+    text: "Personalize your jet ski with unique skins and performance upgrades.",
   },
   {
-    title: "Daily Tactical Trials",
-    text: "Participate in daily challenges, compete on global leaderboards, and earn exclusive rewards.",
+    title: "Daily Challenge Cascades",
+    text: "Compete in fresh daily races, climb global leaderboards, and unlock exclusive rewards.",
   },
   {
-    title: "Instant Access",
-    text: "Jump directly into the action – no installation required.",
+    title: "Instant Splash Access",
+    text: "Jump straight into the action – no downloads, just pure racing fun.",
   },
   {
-    title: "In-depth Analytics",
-    text: "Track your progress with detailed performance metrics and insights.",
+    title: "Performance Insights",
+    text: "Analyze your race data with detailed metrics to improve your hydro tactics.",
   },
   {
-    title: "Community Engagement",
-    text: "Connect with other players, share strategies, and participate in events.",
+    title: "Community Currents",
+    text: "Connect with fellow racers, share winning strategies, and participate in lively events.",
   },
   {
-    title: "Regular Content Updates",
-    text: "Enjoy fresh challenges, features, and optimizations every week.",
+    title: "Frequent Content Surges",
+    text: "Enjoy new tracks, jet skis, and features added regularly.",
   },
   {
-    title: "Dedicated Support",
-    text: "Receive prompt assistance from our team for any queries or issues.",
+    title: "Dedicated Support Crew",
+    text: "Get prompt assistance from our team for any queries or issues.",
   },
 ];
 
 const dailyRoutine = [
   {
-    title: "Morning Skill Drills",
-    text: "Start with a focused challenge – test your precision and speed with specific modifiers.",
+    title: "Morning Tidal Drills",
+    text: "Start your day with focused challenges – test your precision and speed in various water conditions.",
   },
   {
-    title: "Afternoon Competitive Engagements",
-    text: "The competitive arena opens – test your strategies against other players in real-time.",
+    title: "Afternoon Apex Competitions",
+    text: "Enter the competitive arena to test your racing strategies against other players in real-time battles.",
   },
   {
-    title: "Evening High-Stakes Raids",
-    text: "Confront advanced challenges and elite opponents in high-reward evening sessions.",
+    title: "Evening Turbo Tournaments",
+    text: "Confront advanced challenges and elite opponents in high-stakes evening sessions for ultimate rewards.",
   },
 ];
 
 const challengeStats = {
-  title: "Apex Challenger Mode",
+  title: "Hydro Gauntlet Mode",
   description:
-    "Ready to claim your place among the elite? Enter Apex Challenger Mode – timed strategic battles with advanced modifiers, boss encounters, and global rankings.",
+    "Ready to prove your hydro supremacy? Enter Hydro Gauntlet Mode – timed, high-speed races with extreme weather conditions, boss encounters, and global rankings that push your skills to the limit.",
   stats: [
-    { value: "12:00", label: "Longest Session" },
-    { value: "#1", label: "Global Skill Rank" },
-    { value: "9,999", label: "Challenges Completed" },
+    { value: "15:00", label: "Longest Ride" },
+    { value: "#1", label: "Global Racer Rank" },
+    { value: "10,000+", label: "Races Completed" },
   ],
 };
 
@@ -132,10 +134,73 @@ function renderChallengeSection(challengeStats) {
   });
 }
 
+const howToPlaySteps = [
+  {
+    step: "1",
+    title: "Select Your Craft",
+    text: "Choose your jet ski, each with unique handling and speed attributes.",
+  },
+  {
+    step: "2",
+    title: "Hit the Water",
+    text: "Launch into diverse aquatic environments where thrilling races and rivals await.",
+  },
+  {
+    step: "3",
+    title: "Grab Boosts & Power-ups",
+    text: "Collect special items to gain temporary advantages and turn the tide of the race.",
+  },
+  {
+    step: "4",
+    title: "Master the Course",
+    text: "Adapt to unpredictable waves and unleash powerful maneuvers to overcome obstacles.",
+  },
+  {
+    step: "5",
+    title: "Achieve Victory",
+    text: "Cross the finish line first, climb the ranks, and prove your jet ski prowess.",
+  },
+  {
+    step: "6",
+    title: "Refine Your Technique",
+    text: "Continuously improve your racing lines and boost timing through practice runs.",
+  },
+  {
+    step: "7",
+    title: "Compete Worldwide",
+    text: "Challenge players globally and dominate the competitive leaderboards.",
+  },
+  {
+    step: "8",
+    title: "Unlock New Tracks",
+    text: "Gain access to exclusive courses and higher difficulty races as you progress.",
+  },
+  {
+    step: "9",
+    title: "Forge Your Legend",
+    text: "Cement your name in the hall of champions with consistent top performance.",
+  },
+];
+
+function renderHowToPlay(steps) {
+  const container = document.querySelector(".how-to-play__grid");
+  steps.forEach((step) => {
+    const item = document.createElement("li");
+    item.className = "how-step";
+    item.innerHTML = `
+      <div class="how-step__circle">${step.step}</div>
+      <h3 class="subtitle">${step.title}</h3>
+      <p class="how-step__text">${step.text}</p>
+    `;
+    container.appendChild(item);
+  });
+}
+
 // INIT BOTH SECTIONS ON PAGE LOAD
 document.addEventListener("DOMContentLoaded", () => {
   renderFeaturedGame();
   renderFeatures(gameFeatures);
   renderDailyRoutine(dailyRoutine);
   renderChallengeSection(challengeStats);
+  renderHowToPlay(howToPlaySteps);
 });

@@ -19,12 +19,12 @@
 .challenge__value {
   font-size: 2.8rem; /* Increased font size */
   font-weight: 800; /* Increased font weight */
-  color: var(--accent-color); /* Changed color variable */
+  color: var(--secondary-text-color); /* Changed color variable for subtlety */
   margin-bottom: 8px; /* Adjusted margin */
 }
 
 .challenge__label {
-  color: var(--accent-color); /* Changed color variable */
+  color: var(--secondary-text-color); /* Changed color variable for subtlety */
   margin-top: 0.5rem;
   font-size: 1rem; /* Adjusted font size */
   line-height: 1.4;

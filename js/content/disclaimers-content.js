@@ -1,55 +1,55 @@
 const disclaimerContent = {
-    title: "Website Disclaimers",
+    title: "GameLegendForge Legal Notices & Disclaimers",
     sections: [
       {
-        heading: "General Information Disclaimer",
+        heading: "General Information Advisory",
         paragraphs: [
-          `The content on <strong>Domain.com</strong> (referred to as the “Site”) is provided for informational purposes only.
-           While we strive for accuracy, we offer no guarantees, express or implied, regarding the completeness, reliability, or suitability of the information herein.`
+          `The content provided on GameLegendForge (referred to as the “Site”) is solely for informational purposes.
+           While we endeavor to maintain accuracy, we provide no guarantees, explicit or implicit, regarding the completeness, dependability, or suitability of the information presented herein.`
         ],
       },
       {
-        heading: "No Professional Advice",
+        heading: "No Professional Counsel",
         paragraphs: [
-          `This Site does not provide professional advice. All information is for general educational use only
-           and should not replace consultation with qualified professionals. We advise seeking expert opinion before acting on any information from this Site.`
+          `This Site does not offer professional advice. All information is intended for general educational use only
+           and should not substitute consultation with qualified professionals. We recommend seeking expert opinions before acting on any information from this Site.`
         ],
       },
       {
-        heading: "Third-Party Links Disclaimer",
+        heading: "External Links & Third-Party Content Advisory",
         paragraphs: [
-          `The Site may feature links to external websites or content from third parties, including advertisements. These links are not reviewed,
-           controlled, or guaranteed for accuracy, relevance, or completeness by us.`,
-          `We do not endorse, guarantee, or assume responsibility for any information, products, or services offered by third-party websites
-           linked from our Site or any advertisements. We are not involved in any transactions between you and external providers.`
+          `The Site may include links to external websites or content from third parties, including advertisements. We do not review,
+           control, or guarantee the accuracy, relevance, or completeness of these external links.`,
+          `We do not endorse, warrant, or assume responsibility for any information, products, or services offered by third-party websites
+           linked from our Site or any advertisements. We are not involved in transactions between you and external providers.`
         ],
       },
       {
-        heading: "Limitation of Liability",
+        heading: "Limitation of Responsibility",
         paragraphs: [
-          `Under no circumstances will we be liable for any damages or losses sustained from your use of, or reliance on, information provided on the Site.
-           Your engagement with and reliance on this Site’s content is entirely at your own risk.`
+          `Under no circumstances will we be held liable for any damages or losses incurred from your reliance on, or use of, information provided on the Site.
+           Your engagement with and dependence on this Site’s content is entirely at your own discretion.`
         ],
       },
       {
-        heading: "As Is and As Available Basis",
+        heading: "As-Is & As-Available Basis",
         paragraphs: [
-          `The Site is offered on an “as is” and “as available” basis, without warranties of any kind, whether express or implied, including, but not limited to,
+          `The Site is provided on an “as is” and “as available” basis, without warranties of any kind, whether express or implied, including, but not limited to,
            warranties of merchantability, fitness for a particular purpose, or non-infringement.`,
-          `We do not guarantee that the Site will be uninterrupted, secure, or available at all times and locations, or that errors or defects will be corrected.`
+          `We do not guarantee that the Site will operate without interruptions, be secure, or remain accessible at all times and locations, or that errors or defects will be corrected.`
         ],
       },
       {
-        heading: "Disclaimer Amendments",
+        heading: "Disclaimer Updates",
         paragraphs: [
           `We reserve the right to modify this Disclaimer at any time without prior notification. It is your responsibility to periodically review this Disclaimer
            for any updates.`
         ],
       },
       {
-        heading: "How to Contact Us",
+        heading: "How to Reach Us",
         paragraphs: [
-          `For questions about this Disclaimer, please reach out to us.`
+          `For inquiries regarding this Disclaimer, please do not hesitate to contact our support.`
         ],
       },
     ],
